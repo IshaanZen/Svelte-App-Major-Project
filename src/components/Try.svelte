@@ -6,28 +6,20 @@ import SectionWrapper from "./section-wrapper.svelte";
 let DataFeature= [
     {
         FeatureList: [
-            '1500+ Audio Data Samples Used','6 Set of Different Emotions' , 'Both CNN and RNN Models Used' , 'Higher Accuracy Than Before'
+            '12000+ Audio Data Samples Used','6 Set of Different Emotions' , 'Both CNN and RNN Models Used' , 'Higher Accuracy Than Before'
         ] ,
-        description:"Voice Sense Our cutting-edge emotion recognition AI employs sophisticated algorithms to meticulously analyze vocal  as asda effortlessly discerning a spectrum of emotional states. This application excels in delivering a comprehensive emotional analysis offering valuable insights into individual emotions and overall sentiment. By harnessing advanced technology, our platform elevates the understanding of emotional nuances providing users with a nuanced and insightful perspective on the emotional landscape. As pioneers in the field of emotion recognition we are dedicated to offering a refined and insightful experience that goes beyond conventional boundaries",
-        imgUrl: ''
+        description:"Voice Sense Our cutting-edge emotion recognition AI employs sophisticated algorithms to meticulously analyze vocal  as asda effortlessly discerning a spectrum of emotional states. ",
+         imgUrl: 'assets/Models.png'
+    } ,
+ 
+    {
+        FeatureList: [
+            'RAVDESS Emotional speech audio','Crowd Sourced Emotional Multimodal Actors Dataset (CREMA-D)' , 'Toronto emotional speech set (TESS) ' , 'Surrey Audio-Visual Expressed Emotion (Savee)'
+        ] ,
+        description:"Dataset is a collection of various types of data stored in a digital format. Data is the key component of any Machine Learning project." ,
+        imgUrl: 'assets/Datasets.png'
     } 
-] 
-//     {
-//         FeatureList: [
-//             '1500+ Audio Data Samples Used','6 Set of Different Emotions' , 'Both CNN and RNN Models Used' , 'Higher Accuracy Than Before'
-//         ] ,
-//         description:"Voice Sense Our cutting-edge emotion recognition AI employs sophisticated algorithms to meticulously analyze vocal  as asda effortlessly discerning a spectrum of emotional states. This application excels in delivering a comprehensive emotional analysis offering valuable insights into individual emotions and overall sentiment. By harnessing advanced technology, our platform elevates the understanding of emotional nuances providing users with a nuanced and insightful perspective on the emotional landscape. As pioneers in the field of emotion recognition we are dedicated to offering a refined and insightful experience that goes beyond conventional boundaries",
-//         imgUrl: ''
-//     } , 
-//     {
-//         FeatureList: [
-//             '1500+ Audio Data Samples Used','6 Set of Different Emotions' , 'Both CNN and RNN Models Used' , 'Higher Accuracy Than Before'
-//         ] ,
-//         description:"Voice Sense Our cutting-edge emotion recognition AI employs sophisticated algorithms to meticulously analyze vocal  as asda effortlessly discerning a spectrum of emotional states. This application excels in delivering a comprehensive emotional analysis offering valuable insights into individual emotions and overall sentiment. By harnessing advanced technology, our platform elevates the understanding of emotional nuances providing users with a nuanced and insightful perspective on the emotional landscape. As pioneers in the field of emotion recognition we are dedicated to offering a refined and insightful experience that goes beyond conventional boundaries",
-//         imgUrl: ''
-//     }
-
-
+  ] 
 
 </script>
 
@@ -50,8 +42,9 @@ let DataFeature= [
       <ModelCard {DataFeature} {index}>
         {#if index === 0}
             Surveillance 
-        <!-- {:else if index === 1}
-        {:else} -->
+        {:else if index === 1}
+            Dataset Used
+        <!-- {:else} -->
         {/if}
       </ModelCard>
     {/each}

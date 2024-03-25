@@ -11,7 +11,9 @@ html {
 }
 
 body{
-    background-color: #060606
+    background-color: #060606;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -58,8 +60,10 @@ button:focus-visible {
 
 
 .specialBtn {
-    border-color: #646cff;
+    border:2px solid #646cff ;
+    background-color: rgba(255, 255, 255, 0.945);
     color: black;
+    transition: 0.3s ease-in-out;
 }
 
 .specialBtnDark {
@@ -68,19 +72,21 @@ button:focus-visible {
 }
 
 .specialBtn:hover {
-    border-color: blue;
+    border-color: white;
+    background-color: #060606;
+    color: white;
 }
 
 #try-btn {
     position: absolute;
     left: 75%;
-    bottom: 30%;
+    bottom: 25%;
     --c: goldenrod;
     color: var(--c);
     font-size: 16px;
     border: 0.3em solid black;
     border-radius: 0.5em;
-    width: 14em;
+    width: 16em;
     height: 4em;
     text-transform: uppercase;
     font-weight:700;
@@ -90,10 +96,11 @@ button:focus-visible {
     transition: 0.5s;
     color: black;
     margin: 0.5em;
-
+    
 }
 
-#try-btn span {
+
+#try-btn span  {
     position: absolute;
     width: 25%;
     height: 100%;
@@ -106,16 +113,17 @@ button:focus-visible {
     z-index: -1;
 }
 
-#try-btn:hover {
+#try-btn:hover  {
     color: black;
     transform: scale(1.1);
+    
 }
 
 #try-btn:hover span {
     transform: translateY(0) scale(2);
 }
 
-#try-btn span:nth-child(1) {
+#try-btn  span:nth-child(1) {
     --n: 1;
 }
 
@@ -123,10 +131,14 @@ button:focus-visible {
     --n: 2;
 }
 
-#try-btn span:nth-child(3) {
+#try-btn  span:nth-child(3) {
     --n: 3;
 }
 
 #try-btn span:nth-child(4) {
     --n: 4;
+}
+
+.dropShadow {
+    filter: drop-shadow(-10.8923px 14.523px 35.0973px rgb(255, 255, 255 , 0.2));
 }

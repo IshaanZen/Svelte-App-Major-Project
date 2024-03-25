@@ -1,9 +1,17 @@
 <script>
     import Try from '../components/Try.svelte';
-import MainPage from '../components/mainPage.svelte';
-</script>
+    import MainPage from '../components/mainPage.svelte';
+    import { onMount } from 'svelte';
 
-<main id="back"class="flex flex-col">
+    onMount(()=>{
+        let scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+    })
+</script>
+<link rel="stylesheet" href="../src/Stylesheets/locomotive.css">
+<main id="back"class="flex flex-col" data-scroll-container>
     <MainPage/>
     <Try/>
 
@@ -18,4 +26,6 @@ import MainPage from '../components/mainPage.svelte';
     width: 100vw;
     height: 100vh;
     }
+
+
 </style>

@@ -12,14 +12,19 @@ import SectionWrapper from "./section-wrapper.svelte";
             Emotion <span class=" border-2 rounded-3xl p-2 px-2">Detection</span> Sysytem
         </h2>
         
-        <button id="try-btn" >
-            Try Now !!! 
-            
-            <span></span><span></span><span></span><span></span>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <p class="mx-10 p-6">~ Stress or worry is like a rocking chair , It gives you something to do but never gets you anywhere</p>
+    
+        <button id="try-btn">
+            <a href="about">
+                Try Now !!! 
+                
+                <span></span><span></span><span></span><span></span>
+                
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                
+            </a>
         </button>
-        
-    <p class="mx-10 p-6">~ Stress or worry is like a rocking chair , It gives you something to do but never gets you anywhere</p>
+       
     </div>
 
     <!-- <Try/> -->
